@@ -1,14 +1,130 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+* {
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+h1, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+body {
+  /* background-color: rgb(243, 243, 243); */
+  margin: 0px;
+}
+
+.App-header {
+  height: 52px;
+  width: 100vw;
+  background-color: rgb(35, 54, 65);
+}
+
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 1259px;
+  width: 100vw;
+}
+
+/*********************************************/
+/*________________HERO CARD__________________*/
+/*********************************************/
+.hero-card {
+  position: relative;
+  width: 176px;
+  height: 284px;
+  margin-top: 5%;
+  /* margin-bottom: auto; */
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(217, 217, 217);
+  text-align: center;
+  background-color: white;
+}
+
+.hero-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-background {
+  height: 20%;
+  background-size: contain;
+  background-image: url("https://miro.medium.com/max/1400/1*92adf06PCF91kCYu1nPLQg.jpeg");
+}
+
+.hero-avatar {
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  left: 36px;
+  height: 104px;
+  width: 104px;
+  border-radius: 50%;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.hero-info {
+  height: 80%;
+}
+
+.hero-info > p.hero-name {
+  padding-top: 76px;
+  font-size: 16px;
+  color: rgba(0, 0 , 0, 0.9);
+  background-color: white;
+}
+
+.hero-info > p.hero-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hero-info > p.hero-occupation {
+  padding-top: 8px;
+  padding-bottom: 28px;
+  font-size: 14px;
+  color: rgba(0, 0 , 0, 0.6);
+}
+
+.hero-affiliation {
+  display: flex;
+  padding-left: 12px;
+}
+
+.affiliation-img {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  background-size: contain;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4jqVu1zgxY9N-JuySvPsSIPnROSnY-QuOlpVKlFA_gImRvk6y");
+}
+
+.affiliation-text {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 8px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.hire-btn {
+  padding: 6px 12px;
+  margin-top: 8px;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 16px;
+  color: rgb(0, 105, 168);
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(0, 105, 168);
+  cursor: pointer;
+}
+
+.hire-btn:hover {
+  background-color: rgba(226, 244, 252, 0.5);
+  border-width: 1.5px;
 }
