@@ -42,6 +42,7 @@ body {
 }
 
 .nav-main-logo > img {
+  cursor: pointer;
   height: 34px;
   width: 34px;
   border-radius: 2px;
@@ -84,6 +85,17 @@ body {
 .search:focus {
   outline: none;
 }
+/*-------------------*/
+/* NAV BAR */
+.nav-bar {
+  background-color: red;
+  height: 100%;
+  width: 660px;
+}
+
+
+/*-------------------*/
+
 
 /*********************************************/
 /*________________HERO CONTAINER_____________*/
