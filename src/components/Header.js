@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchBar from './SearchBar';
 import hHLogo from '../images/hero-4-hire-logo.png'
 
 class Header extends React.Component {
@@ -8,6 +9,8 @@ class Header extends React.Component {
         <div className="nav-main-logo">
           <img src={hHLogo} alt="logo"/>
         </div>
+
+        <SearchBar />
       </div>
     )
   }
