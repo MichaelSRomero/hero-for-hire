@@ -10,7 +10,7 @@ h1, p {
 }
 
 body {
-  /* background-color: rgb(243, 243, 243); */
+  background-color: rgb(243, 243, 243);
   margin: 0px;
 }
 
@@ -29,6 +29,7 @@ body {
   display: flex;
   align-items: center;
   height: inherit;
+  /* setting a max to viewport */
   max-width: 1128px;
   margin: 0 auto;
 }
@@ -39,6 +40,8 @@ body {
   align-items: center;
   height: 46px;
   width: 46px;
+  /* logo can not go below 46px */
+  min-width: 46px;
 }
 
 .nav-main-logo > img {
@@ -54,6 +57,16 @@ body {
 }
 /*-------------------*/
 /* SEARCH BAR */
+.responsive-search {
+  /* setting width to 100% keeps its width between:
+   * 295px (minimum) from remaining width
+   * 406px (maximum)
+   */
+  width: 100%;
+  max-width: 406px;
+  margin-right: 16px;
+}
+
 .nav-search {
   box-sizing: border-box;
   display: flex;
@@ -62,6 +75,7 @@ body {
   border-radius: 2px;
   height: 34px;
   width: 280px;
+  min-width: 280px;
   padding-right: 8px;
 }
 
@@ -88,12 +102,38 @@ body {
 /*-------------------*/
 /* NAV BAR */
 .nav-bar {
-  background-color: red;
+  /* background-color: red; */
+  display: flex;
+  color: #c7d1d8;
+  font-weight: 400;
+  line-height: 1.33333;
   height: 100%;
   width: 660px;
+  min-width: 660px;
 }
 
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  height: calc(100% - 8px);
+  width: 80px;
+  margin-top: 8px;
+}
 
+.nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: 24px;
+}
+
+.nav-icon > img {
+  height: 18px;
+  width: auto;
+}
 /*-------------------*/
 
 

@@ -11,7 +11,10 @@ class Header extends React.Component {
           <img src={hHLogo} alt="logo"/>
         </div>
 
-        <SearchBar />
+        <div className="responsive-search">
+          <SearchBar />
+        </div>
+        
         <NavBar />
       </div>
     )
