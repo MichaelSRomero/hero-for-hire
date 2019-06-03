@@ -5,7 +5,11 @@ class NavItem extends React.Component {
     return (
       <div className="nav-item">
         <div className="nav-icon">
-          <img src={this.props.icon} alt="icon"/>
+          <div
+            className="nav-icon-img"
+            onMouseEnter={() => console.log(`${this.props.name}`)}
+            style={{backgroundImage: `url(${this.props.icon})`}}>
+          </div>
         </div>
 
         <span>{this.props.name}</span>
