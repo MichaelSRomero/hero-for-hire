@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import AdBar from './components/AdBar'
 import HeroContainer from './components/HeroContainer'
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         </header>
 
         <div className="container">
+          <AdBar />
           <HeroContainer />
         </div>
 
