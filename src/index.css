@@ -49,7 +49,7 @@ body {
   height: 34px;
   width: 34px;
   border-radius: 2px;
-  transition: 0.3s;
+  transition: 0.167s;
 }
 
 .nav-main-logo > img:active {
@@ -121,7 +121,7 @@ body {
   width: 80px;
   margin-top: 8px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.167s;
 }
 
 .nav-item:hover {
@@ -142,11 +142,33 @@ body {
   background-repeat: no-repeat;
   height: 20px;
   width: 20px;
-  transition: 0.3s;
+  transition: 0.167s;
 }
 
-.nav-icon-img:active {
+.nav-icon-img:active, .nav-user-icon:active {
   transform: scale(0.9);
+}
+
+.nav-user-icon {
+  background-image: url('https://vignette.wikia.nocookie.net/bokunoheroacademia/images/a/a3/All_Might_Two_Heroes_Portrait_2.png/revision/latest/?cb=20190211163633');
+  background-size: cover;
+  border-radius: 50%;
+  border: 1px solid white;
+  height: 22px;
+  width: 22px;
+  transition: 0.167s;
+}
+
+.nav-text {
+  display: flex;
+  align-items: center;
+}
+
+.nav-text > img {
+  height: 4px;
+  width: 8px;
+  margin-left: 6px;
+  transition: 1s;
 }
 /*-------------------*/
 

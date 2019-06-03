@@ -1,5 +1,6 @@
 import React from 'react';
 import NavItem from './NavItem';
+import UserIcon from './UserIcon';
 import homeIcon from '../images/home.png';
 import homeSelectIcon from '../images/home-selected.png';
 import networkIcon from '../images/network.png';
@@ -47,6 +48,9 @@ class NavBar extends React.Component {
     return (
       <div className="nav-bar">
         {this.renderNavItems()}
+        <UserIcon
+          hover={this.state.currentHover}
+          onHoverChange={this.onHoverChange}/>
       </div>
     )
   }
