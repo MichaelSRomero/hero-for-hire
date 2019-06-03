@@ -1,24 +1,45 @@
 import React from 'react';
 import NavItem from './NavItem';
 import homeIcon from '../images/home.png';
+import homeSelectIcon from '../images/home-selected.png';
 import networkIcon from '../images/network.png';
+import networkSelectIcon from '../images/network-selected.png';
 import jobIcon from '../images/job.png';
+import jobSelectIcon from '../images/job-selected.png';
 import messageIcon from '../images/message.png';
-import notificationIcon from '../images/notification-off.png';
+import messageSelectIcon from '../images/message-selected.png';
+import notificationIcon from '../images/notification.png';
+import notificationSelectIcon from '../images/notification-selected.png';
 
 const navItems = [
-  {icon: homeIcon, name: "Home"},
-  {icon: networkIcon, name: "My Network"},
-  {icon: jobIcon, name: "Jobs"},
-  {icon: messageIcon, name: "Messaging"},
-  {icon: notificationIcon, name: "Notifications"},
+  {icon: homeIcon, name: "Home", selected: homeSelectIcon},
+  {icon: networkIcon, name: "My Network", selected: networkSelectIcon},
+  {icon: jobIcon, name: "Jobs", selected: jobSelectIcon},
+  {icon: messageIcon, name: "Messaging", selected: messageSelectIcon},
+  {icon: notificationIcon, name: "Notifications", selected: notificationSelectIcon}
 ]
 
 class NavBar extends React.Component {
 
+  state = {
+    currentHover: ''
+  }
+
   renderNavItems = () => {
     return navItems.map(item => {
-      return <NavItem icon={item.icon} name={item.name}/>
+      return <NavItem
+        key={item.name}
+        icon={item.icon}
+        name={item.name}
+        hover={this.state.currentHover}
+        selected={item.selected}
+        onHoverChange={this.onHoverChange}/>
+    });
+  }
+
+  onHoverChange = (iconName) => {
+    this.setState({
+      currentHover: iconName
     });
   }
 
