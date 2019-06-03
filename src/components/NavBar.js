@@ -59,6 +59,10 @@ class NavBar extends React.Component {
         <NavIconWithDropDown
           hover={this.state.currentHover}
           onHoverChange={this.onHoverChange}/>
+
+        <div className="nav-item-premium">
+          <span>Try Premium Free for 1 Month</span>
+        </div>
       </div>
     )
   }

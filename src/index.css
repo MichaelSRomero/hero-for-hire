@@ -177,6 +177,23 @@ body {
   margin-left: 6px;
   transition: 1s;
 }
+
+.nav-item-premium {
+  display: flex;
+  align-items: center;
+  color: #dccea4;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 4px 0;
+  height: calc(100% - 8px);
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-item-premium:hover {
+  text-decoration: underline;
+}
 /*-------------------*/
 
 
