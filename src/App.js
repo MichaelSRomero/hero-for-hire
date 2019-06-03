@@ -3,7 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import AdBar from './components/AdBar'
-import HeroContainer from './components/HeroContainer'
+import LeftRail from './components/LeftRail'
+import CoreRail from './components/CoreRail'
 
 class App extends Component {
   render() {
@@ -15,7 +16,11 @@ class App extends Component {
 
         <div className="container">
           <AdBar />
-          <HeroContainer />
+
+          <div className="layout-container">
+            <LeftRail />
+            <CoreRail />
+          </div>
         </div>
 
         <footer>
