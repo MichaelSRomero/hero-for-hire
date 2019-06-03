@@ -124,6 +124,13 @@ body {
   transition: 0.167s;
 }
 
+.nav-item:nth-child(7) {
+  border-left: #5c6f7c solid 1px;
+  margin-top: 0px;
+  padding-top: 8px;
+  width: 79px;
+}
+
 .nav-item:hover {
   color: #fff;
 }

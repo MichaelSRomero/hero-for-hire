@@ -1,6 +1,7 @@
 import React from 'react';
 import NavItem from './NavItem';
 import UserIcon from './UserIcon';
+import NavIconWithDropDown from './NavIconWithDropDown';
 import homeIcon from '../images/home.png';
 import homeSelectIcon from '../images/home-selected.png';
 import networkIcon from '../images/network.png';
@@ -11,6 +12,8 @@ import messageIcon from '../images/message.png';
 import messageSelectIcon from '../images/message-selected.png';
 import notificationIcon from '../images/notification.png';
 import notificationSelectIcon from '../images/notification-selected.png';
+import gridIcon from '../images/grid.png';
+import gridSelectedIcon from '../images/grid-selected.png';
 
 const navItems = [
   {icon: homeIcon, name: "Home", selected: homeSelectIcon},
@@ -48,7 +51,12 @@ class NavBar extends React.Component {
     return (
       <div className="nav-bar">
         {this.renderNavItems()}
+
         <UserIcon
+          hover={this.state.currentHover}
+          onHoverChange={this.onHoverChange}/>
+
+        <NavIconWithDropDown
           hover={this.state.currentHover}
           onHoverChange={this.onHoverChange}/>
       </div>
