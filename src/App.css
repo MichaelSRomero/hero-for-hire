@@ -1,0 +1,23 @@
+@media (max-width: 1026px) {
+  .responsive-search {
+    max-width: 496px;
+  }
+
+  .nav-bar {
+    width: 408px;
+    min-width: 408px;
+  }
+
+  .nav-item, .nav-item:nth-child(7) {
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    height: 100%;
+    width: 44px;
+    min-width: 44px;
+  }
+
+  .nav-item > span, .nav-text {
+    display: none;
+  }
+}
