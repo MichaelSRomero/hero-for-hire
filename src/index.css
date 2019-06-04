@@ -20,6 +20,7 @@ body {
   align-items: center;
   padding: 0 30px;
   width: calc(100vw - 60px);
+  overflow: auto;
 }
 
 /*********************************************/
@@ -278,6 +279,8 @@ body {
 
 .core-header {
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
   background-color: white;
   border-bottom: 1px solid rgba(0,0,0,.15);
   border-radius: 2px;
@@ -285,6 +288,31 @@ body {
   height: 41px;
   width: 552px;
   padding: 8px 8px 8px 20px;
+}
+
+#core-invitations {
+  color: rgba(0,0,0,.9);
+  font-weight: 400;
+  width: 454px;
+}
+
+#core-btn {
+  color: rgba(0,0,0,.6);
+  font-weight: 600;
+  font-size: 14px;
+  /* height: 24px; */
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+#core-btn:hover {
+  background-color: rgb(243, 243, 243);
+  border-radius: 2px;
+}
+
+#core-btn:active {
+  background-color: rgba(207,207,207,.45);
+  outline: #98d8f4 solid 2px;
 }
 
 /*********************************************/

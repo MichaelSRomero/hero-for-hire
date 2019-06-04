@@ -6,6 +6,8 @@ class CoreRail extends React.Component {
     return (
       <div className="core-rail">
         <div className="core-header">
+          <span id="core-invitations">No pending invitations</span>
+          <span id="core-btn">Manage</span>
         </div>
 
         <HeroContainer />
