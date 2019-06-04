@@ -6,6 +6,14 @@ class RightRail extends React.Component {
     return (
       <div className="right-rail">
         <PromotionBanner />
+
+        <footer>
+          <div className="footer-links">
+          </div>
+
+          <div className="footer-copyright">
+          </div>
+        </footer>
       </div>
     )
   }

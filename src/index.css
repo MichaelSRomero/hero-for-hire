@@ -64,7 +64,7 @@ body {
 .nav-main-logo > img:active {
  transform: scale(0.9);
 }
-/*-------------------*/
+/*******************************************/
 /* SEARCH BAR */
 .responsive-search {
   /* setting width to 100% keeps its width between:
@@ -108,7 +108,7 @@ body {
 .search:focus {
   outline: none;
 }
-/*-------------------*/
+/*******************************************/
 /* NAV BAR */
 .nav-bar {
   /* background-color: red; */
@@ -268,7 +268,7 @@ body {
   width: 216px;
   min-width: 216px;
 }
-/*************/
+/*******************************************/
 /* Core Rail */
 .core-rail {
   height: 762px;
@@ -314,7 +314,7 @@ body {
   background-color: rgba(207,207,207,.45);
   outline: #98d8f4 solid 2px;
 }
-/*************/
+/*******************************************/
 /* Right Rail */
 .right-rail {
   height: 423px;
@@ -331,6 +331,20 @@ body {
   height: 262px;
   padding: 6px 6px;
 }
+
+.right-rail > footer {
+  box-sizing: border-box;
+  border-top: 1px solid #b3b6b9;
+  margin-top: 16px;
+  height: 129px;
+}
+
+.footer-links {
+  height: 72px;
+  margin: 16px 0;
+}
+/*******************************************/
+
 
 /*********************************************/
 /*________________HERO CONTAINER_____________*/
