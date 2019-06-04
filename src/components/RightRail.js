@@ -1,5 +1,7 @@
 import React from 'react';
 import PromotionBanner from './PromotionBanner'
+import linkArrow from '../images/link-arrow.png'
+import linkArrowHover from '../images/link-arrow-hover.png'
 
 class RightRail extends React.Component {
   render() {
@@ -12,7 +14,10 @@ class RightRail extends React.Component {
             <div className="row">
               <li>About</li>
               <li>Help Center</li>
-              <li>Privacy & Terms</li>
+              <li>
+                Privacy & Terms
+                <img src={linkArrow} alt="click me"/>
+              </li>
             </div>
             <div className="row">
               <li>Advertising</li>
