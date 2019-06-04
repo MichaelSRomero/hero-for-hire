@@ -314,6 +314,23 @@ body {
   background-color: rgba(207,207,207,.45);
   outline: #98d8f4 solid 2px;
 }
+/*************/
+/* Right Rail */
+.right-rail {
+  height: 423px;
+  width: 312px;
+  min-width: 312px;
+  margin-left: 25px;
+  margin-bottom: 24px;
+}
+
+.promotion-banner {
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+  height: 262px;
+  padding: 6px 6px;
+}
 
 /*********************************************/
 /*________________HERO CONTAINER_____________*/

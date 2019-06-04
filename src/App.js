@@ -5,6 +5,7 @@ import Header from './components/Header';
 import AdBar from './components/AdBar'
 import LeftRail from './components/LeftRail'
 import CoreRail from './components/CoreRail'
+import RightRail from './components/RightRail'
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <div className="layout-container">
             <LeftRail />
             <CoreRail />
+            <RightRail />
           </div>
         </div>
 
