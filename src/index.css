@@ -15,11 +15,15 @@ body {
 }
 
 .container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 52px;
   padding: 0 30px;
-  width: calc(100vw - 60px);
+  /* width: calc(100vw - 60px); */
+  width: 1128px;
+  min-width: 1188px;
   overflow: auto;
 }
 
@@ -27,6 +31,9 @@ body {
 /*________________HEADER_____________________*/
 /*********************************************/
 .App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
   box-sizing: border-box;
   height: 52px;
   width: 100%;

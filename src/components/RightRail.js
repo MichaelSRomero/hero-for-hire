@@ -49,7 +49,7 @@ class RightRail extends React.Component {
             </div>
 
             <div className="row">
-              <li>Get the LinkedIn app</li>
+              <li>Get the HeroHire app</li>
               <li>More</li>
             </div>
           </div>

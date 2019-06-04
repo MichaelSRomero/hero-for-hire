@@ -1,6 +1,13 @@
 @media (max-width: 1026px) {
   .responsive-search {
     max-width: 496px;
+    min-width: 100px;
+  }
+
+  .nav-search {
+    max-width: 280px;
+    min-width: 100px;
+    width: 100%;
   }
 
   .nav-bar {
