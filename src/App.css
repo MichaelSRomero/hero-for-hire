@@ -28,3 +28,9 @@
     display: none;
   }
 }
+
+@media (min-width: 1188px) {
+  .container {
+    margin: 52px auto 0 auto;
+  }
+}
