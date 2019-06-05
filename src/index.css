@@ -339,6 +339,37 @@ body {
   padding: 6px 6px;
 }
 
+.promotion-header {
+  color: rgba(0, 0, 0, 0.85);
+  font-family: 16px;
+  font-weight: 400;
+  line-height: 15px;
+  height: 15px;
+  padding: 4px 8px;
+}
+
+.promotion-header > span {
+  cursor: pointer;
+}
+
+.promotion-card {
+  display: flex;
+  height: 71px;
+  margin-top: 5px;
+}
+
+.promotion-icon {
+  border: 2px solid transparent;
+  height: 50px;
+  width: 50px;
+  margin: 1px 9px 1px 5px;
+}
+
+.promotion-arrow {
+  height: 19.6px;
+  width: 6px;
+}
+
 .right-rail > footer {
   box-sizing: border-box;
   border-top: 1px solid #b3b6b9;
