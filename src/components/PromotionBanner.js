@@ -20,9 +20,22 @@ const promos = [
 ]
 
 class PromotionBanner extends React.Component {
+  state = {
+    currentHover: ''
+  }
 
   createPromotionCards = () => {
-    return promos.map(promo => <PromotionCard promo={promo}/>)
+    return promos.map(promo => <PromotionCard
+      key={promo.header}
+      promo={promo}
+      currentHover={this.state.currentHover}
+      onHoverChange={this.onHoverChange}/>)
+  }
+
+  onHoverChange = (promotion) => {
+    this.setState({
+      currentHover: promotion
+    })
   }
 
   render() {

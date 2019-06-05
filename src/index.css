@@ -360,6 +360,7 @@ body {
 }
 
 .promotion-card:hover h5 {
+  color: #0073b1;
   text-decoration: underline;
 }
 
