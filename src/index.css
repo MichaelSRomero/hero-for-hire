@@ -356,6 +356,11 @@ body {
   display: flex;
   height: 71px;
   margin-top: 5px;
+  cursor: pointer;
+}
+
+.promotion-card:hover h5 {
+  text-decoration: underline;
 }
 
 .promotion-icon {
@@ -363,6 +368,31 @@ body {
   height: 50px;
   width: 50px;
   margin: 1px 9px 1px 5px;
+}
+
+.promotion-info {
+  display: flex;
+  flex-direction: column;
+  width: 212px;
+}
+
+.promotion-info > h5 {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.promotion-info > p {
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 12px;
+  height: 33px;
+}
+
+.outer-arrow {
+  display: flex;
+  align-items: center;
 }
 
 .promotion-arrow {
