@@ -100,5 +100,37 @@
       "biography": "Shoto is quite seasoned in battle, being able to stay calm and composed even while fighting real villains. Though brutal in combat, Shoto is well-grounded on the ethics of heroism, only wishing to subdue his frozen opponents as opposed to killing them by prolonging their frozen states.",
       "fee": 150
     }
+  ],
+  "companies": [
+    {
+      "id": 1,
+      "name": "Toei Animation",
+      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Toei_Animation_logo.svg/440px-Toei_Animation_logo.svg.png"
+    },
+    {
+      "id": 2,
+      "name": "Funimation",
+      "logo": "https://fontmeme.com/images/funimation_logo.png"
+    },
+    {
+      "id": 3,
+      "name": "Viz Media",
+      "logo": "https://dw9to29mmj727.cloudfront.net/social/1774-VIZMedia_ImprintSocialShare_NEW_600x314.png"
+    },
+    {
+      "id": 4,
+      "name": "Aniplex",
+      "logo": "http://nerdreactor.com/wp-content/uploads/2014/07/Aniplex-logo-color.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Studio Ghibli",
+      "logo": "https://vignette.wikia.nocookie.net/logopedia/images/3/3f/Only-yesterday-disneyscreencaps.com-1.jpg/revision/latest?cb=20150927153703"
+    },
+    {
+      "id": 6,
+      "name": "Crunchy Roll",
+      "logo": "https://pmcvariety.files.wordpress.com/2016/04/crunchyroll_logo.jpg"
+    }
   ]
 }
