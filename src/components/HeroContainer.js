@@ -3,23 +3,42 @@ import {connect} from 'react-redux';
 import HeroCard from './HeroCard'
 
 class HeroContainer extends React.Component {
+  state = {
+    minIndex: 0,
+    maxIndex: 2
+  }
 
   handleClick = (heroData) => {
     console.log('Got clicked');
   }
 
+  getfilteredHeroes = () => {
+    const filtered = []
+
+    for (let i = this.state.minIndex; i < this.state.maxIndex; i++) {
+      filtered.push(this.props.heroes[i])
+    }
+
+    return filtered;
+  }
+
   createHeroCards = () => {
+    const filtered = []
+
+    for (let i = this.state.minIndex; i < this.state.maxIndex; i++) {
+      filtered.push(this.props.heroes[i])
+    }
     return this.props.heroes.map(hero => <HeroCard key={hero.id} heroData={hero} handleClick={this.handleClick}/>)
   }
 
   componentDidMount() {
-    console.log(this.props);
     fetch("http://localhost:3000/heroes")
       .then(res => res.json())
       .then(heroesJSON => this.props.fetchHeroes(heroesJSON))
   }
+
   render() {
-    return (
+    return ( this.props.heroes.length > 0 &&
       <div className="hero-container">
         <div className="hero-container-header">
           <h3>School alumni you may know</h3>

@@ -1,4 +1,8 @@
-const heroReducer = (state = {heroes: []}, action) => {
+let heroState = {
+  heroes: []
+}
+
+const heroReducer = (state = heroState, action) => {
   console.log("This is the action inside reducer", action)
 
   switch (action.type) {
