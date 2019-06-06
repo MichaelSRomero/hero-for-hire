@@ -4,31 +4,12 @@ import HeroCard from './HeroCard'
 import { getHeroes } from '../adapter/heroAdapter';
 
 class HeroContainer extends React.Component {
-  state = {
-    minIndex: 0,
-    maxIndex: 2
-  }
 
   handleClick = (heroData) => {
     console.log('Got clicked');
   }
 
-  getfilteredHeroes = () => {
-    const filtered = []
-
-    for (let i = this.state.minIndex; i < this.state.maxIndex; i++) {
-      filtered.push(this.props.heroes[i])
-    }
-
-    return filtered;
-  }
-
   createHeroCards = () => {
-    const filtered = []
-
-    for (let i = this.state.minIndex; i < this.state.maxIndex; i++) {
-      filtered.push(this.props.heroes[i])
-    }
     return this.props.heroes.map(hero => <HeroCard key={hero.id} heroData={hero} handleClick={this.handleClick}/>)
   }
 
@@ -55,9 +36,20 @@ class HeroContainer extends React.Component {
 ///////////////////////////////////////////////////////////
 //____________________REDUX HELPERS______________________//
 ///////////////////////////////////////////////////////////
+const filterHeroes = ({heroes, minIndex, maxIndex}) => {
+  const filtered = []
+
+  for (let i = minIndex; i < maxIndex; i++) {
+    filtered.push(heroes[i])
+  }
+
+  return filtered;
+}
+
 const mapStatetoProps = (state) => {
   console.log("We are inside mapStatetoProps()", state);
-  return state
+
+  return state.heroes.length > 0 ? {heroes: filterHeroes(state)} : state
 }
 
 export default connect(mapStatetoProps, { getHeroes })(HeroContainer);
