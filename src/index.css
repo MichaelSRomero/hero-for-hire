@@ -447,11 +447,52 @@ body {
 /*________________HERO CONTAINER_____________*/
 /*********************************************/
 .hero-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  height: 1259px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+  height: 370px;
   width: 100%;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+
+.hero-container-header {
+  display: flex;
+  height: 32px;
+  padding-left: 20px;
+  padding-right: 8px;
+}
+
+.hero-container-header > h3 {
+  color: rgba(0,0,0,.9);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  height: 32px;
+  width: 394px;
+  margin: 0;
+}
+
+.hero-container-header > span {
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  line-height: 32px;
+  height: 32px;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.hero-container-header > span:hover {
+  background-color: rgba(207,207,207,.25);
+  border-radius: 2px;
+  color: rgba(0,0,0,.75);
+}
+
+.hero-container-header > span:active {
+  outline: #98d8f4 solid 2px;
+  background-color: rgba(207,207,207,.45);
+  border-radius: 2px;
 }
 
 /*********************************************/

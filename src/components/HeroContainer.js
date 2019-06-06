@@ -21,7 +21,14 @@ class HeroContainer extends React.Component {
   render() {
     return (
       <div className="hero-container">
-        {this.createHeroCards()}
+        <div className="hero-container-header">
+          <h3>School alumni you may know</h3>
+          <span>See all</span>
+        </div>
+
+        <div className="hero-list">
+          {this.createHeroCards()}
+        </div>
       </div>
     )
   }
