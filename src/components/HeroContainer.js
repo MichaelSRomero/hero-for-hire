@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import HeroCard from './HeroCard'
+import { getHeroes } from '../adapter/heroAdapter';
 
 class HeroContainer extends React.Component {
   state = {
@@ -32,9 +33,7 @@ class HeroContainer extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3000/heroes")
-      .then(res => res.json())
-      .then(heroesJSON => this.props.fetchHeroes(heroesJSON))
+    this.props.getHeroes()
   }
 
   render() {
@@ -61,10 +60,4 @@ const mapStatetoProps = (state) => {
   return state
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    fetchHeroes: (heroes) => dispatch({type: 'FETCH_HEROES', payload: heroes})
-  }
-}
-
-export default connect(mapStatetoProps, mapDispatchToProps)(HeroContainer);
+export default connect(mapStatetoProps, { getHeroes })(HeroContainer);
