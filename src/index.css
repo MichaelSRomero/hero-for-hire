@@ -495,6 +495,30 @@ body {
   border-radius: 2px;
 }
 
+.rnd-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.rnd-btn:hover {
+  background-color: rgba(207,207,207,.25);
+  border-radius: 50%;
+}
+
+.rnd-btn:active {
+  background-color: rgba(207,207,207,.45);
+  outline: #98d8f4 solid 2px;
+}
+
+.rnd-btn > img {
+  height: 14px;
+  width: 6px;
+}
+
 .hero-list {
   box-sizing: border-box;
   display: flex;

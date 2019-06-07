@@ -2,6 +2,10 @@ import React from 'react';
 import {connect} from 'react-redux';
 import HeroCard from './HeroCard'
 import { getHeroes } from '../adapter/heroAdapter';
+import prevArrow from '../images/prev-arrow.png'
+import prevArrowOn from '../images/prev-arrow-on.png'
+import nextArrow from '../images/next-arrow.png'
+import nextArrowOn from '../images/next-arrow-on.png'
 
 class HeroContainer extends React.Component {
 
@@ -23,6 +27,13 @@ class HeroContainer extends React.Component {
         <div className="hero-container-header">
           <h3>School alumni you may know</h3>
           <span>See all</span>
+
+          <div className="rnd-btn">
+            <img src={prevArrow} alt="previous"/>
+          </div>
+          <div className="rnd-btn">
+            <img src={nextArrowOn} alt="next"/>
+          </div>
         </div>
 
         <div className="hero-list">
