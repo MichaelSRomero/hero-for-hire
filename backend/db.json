@@ -99,6 +99,26 @@
       "fighting style": ["Long Range Combat"],
       "biography": "Shoto is quite seasoned in battle, being able to stay calm and composed even while fighting real villains. Though brutal in combat, Shoto is well-grounded on the ethics of heroism, only wishing to subdue his frozen opponents as opposed to killing them by prolonging their frozen states.",
       "fee": 150
+    },
+    {
+      "id": 6,
+      "name": "Tsuyu Asui",
+      "alias": "Rainy Season Hero: Froppy",
+      "birthday": "February 12",
+      "gender": "Female",
+      "quirk": ["Frog"],
+      "birthplace": "Aichi Prefecture",
+      "occupation": "Student",
+      "affiliation": "U.A. High School",
+      "avatar": "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/e/e7/Froppy_2.png/revision/latest/scale-to-width-down/185?cb=20180301014206",
+      "uniforms": {
+        "student": "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/f/ff/Tsuyu_Asui_Full_Body_School_Uniform_Anime.png/revision/latest?cb=20160118114942",
+        "hero": "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/8/88/Tsuyu_Asui_Full_Body_Hero_Costume_Anime.png/revision/latest?cb=20160118114942",
+        "civilian": "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/8/8d/Tsuyu_Asui_Civilian_Profile.png/revision/latest?cb=20180608171920"
+      },
+      "fighting style": ["Mid-range support"],
+      "biography": "Tsuyu is a straightforward and laid-back individual who always speaks directly from her mind and what she thinks about others.",
+      "fee": 100
     }
   ],
   "companies": [

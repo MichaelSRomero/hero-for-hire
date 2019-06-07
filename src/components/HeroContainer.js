@@ -1,7 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import HeroCard from './HeroCard'
-import { getHeroes } from '../adapter/heroAdapter';
+import HeroIndexButton from './HeroIndexButton'
+import { getHeroes, nextIndex, prevIndex } from '../adapter/heroAdapter';
 import prevArrow from '../images/prev-arrow.png'
 import prevArrowOn from '../images/prev-arrow-on.png'
 import nextArrow from '../images/next-arrow.png'
@@ -17,6 +18,14 @@ class HeroContainer extends React.Component {
     return this.props.heroes.map(hero => <HeroCard key={hero.id} heroData={hero} handleClick={this.handleClick}/>)
   }
 
+  nextOnClick = () => {
+    this.props.nextIndex()
+  }
+
+  previousOnClick = () => {
+    this.props.prevIndex()
+  }
+
   componentDidMount() {
     this.props.getHeroes()
   }
@@ -28,12 +37,8 @@ class HeroContainer extends React.Component {
           <h3>School alumni you may know</h3>
           <span>See all</span>
 
-          <div className="rnd-btn">
-            <img src={prevArrow} alt="previous"/>
-          </div>
-          <div className="rnd-btn">
-            <img src={nextArrowOn} alt="next"/>
-          </div>
+          <HeroIndexButton icon={prevArrow} iconOn={prevArrowOn} handleClick={this.previousOnClick}/>
+          <HeroIndexButton icon={nextArrow} iconOn={nextArrowOn} handleClick={this.nextOnClick}/>
         </div>
 
         <div className="hero-list">
@@ -63,4 +68,4 @@ const mapStatetoProps = (state) => {
   return state.heroes.length > 0 ? {heroes: filterHeroes(state)} : state
 }
 
-export default connect(mapStatetoProps, { getHeroes })(HeroContainer);
+export default connect(mapStatetoProps, { getHeroes, nextIndex, prevIndex })(HeroContainer);
