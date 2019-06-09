@@ -1,11 +1,11 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 class HeroIndexButton extends React.Component {
   render() {
-    const { icon, iconOn, handleClick } = this.props
+    const { icon, handleClick, style } = this.props
     return (
       <div
+        style={style}
         className="rnd-btn"
         onClick={handleClick}>
         <img src={icon} alt="previous"/>
@@ -14,8 +14,4 @@ class HeroIndexButton extends React.Component {
   }
 }
 
-const mapStatetoProps = (state) => {
-  return {maxIndex: state.maxIndex, minIndex: state.minIndex}
-}
-
-export default connect(mapStatetoProps)(HeroIndexButton);
+export default HeroIndexButton;

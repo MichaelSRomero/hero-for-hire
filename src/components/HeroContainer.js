@@ -8,6 +8,9 @@ import prevArrowOn from '../images/prev-arrow-on.png'
 import nextArrow from '../images/next-arrow.png'
 import nextArrowOn from '../images/next-arrow-on.png'
 
+const noDropStyle = {cursor: 'no-drop'}
+const pointerStyle = {cursor: 'pointer'}
+
 class HeroContainer extends React.Component {
 
   handleClick = (heroData) => {
@@ -35,14 +38,22 @@ class HeroContainer extends React.Component {
   }
 
   render() {
+    const { maxIndex, minIndex, heroCount } = this.props
+
     return ( this.props.heroes.length > 0 &&
       <div className="hero-container">
         <div className="hero-container-header">
           <h3>School alumni you may know</h3>
           <span>See all</span>
 
-          <HeroIndexButton icon={prevArrow} iconOn={prevArrowOn} handleClick={this.previousOnClick}/>
-          <HeroIndexButton icon={nextArrow} iconOn={nextArrowOn} handleClick={this.nextOnClick}/>
+          <HeroIndexButton
+            style={minIndex > 0 ? pointerStyle : noDropStyle}
+            icon={minIndex > 0 ? prevArrowOn : prevArrow}
+            handleClick={this.previousOnClick}/>
+          <HeroIndexButton
+            style={maxIndex < heroCount ? pointerStyle : noDropStyle}
+            icon={maxIndex < heroCount ? nextArrowOn : nextArrow}
+            handleClick={this.nextOnClick}/>
         </div>
 
         <div className="hero-list">
