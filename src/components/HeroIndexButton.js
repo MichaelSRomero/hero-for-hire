@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 class HeroIndexButton extends React.Component {
   render() {
-    const { icon, handleClick } = this.props
+    const { icon, iconOn, handleClick } = this.props
     return (
       <div
         className="rnd-btn"

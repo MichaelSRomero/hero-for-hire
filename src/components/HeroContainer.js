@@ -19,11 +19,15 @@ class HeroContainer extends React.Component {
   }
 
   nextOnClick = () => {
-    this.props.nextIndex()
+    const { maxIndex, heroCount, nextIndex } = this.props
+
+    return maxIndex < heroCount ? nextIndex() : null
   }
 
   previousOnClick = () => {
-    this.props.prevIndex()
+    const { minIndex, prevIndex } = this.props
+
+    return minIndex > 0 ? prevIndex() : null
   }
 
   componentDidMount() {
@@ -65,7 +69,9 @@ const filterHeroes = ({heroes, minIndex, maxIndex}) => {
 const mapStatetoProps = (state) => {
   console.log("We are inside mapStatetoProps()", state);
 
-  return state.heroes.length > 0 ? {heroes: filterHeroes(state)} : state
+  return state.heroes.length > 0 ?
+    {...state, heroes: filterHeroes(state), heroCount: state.heroes.length}
+    : state
 }
 
 export default connect(mapStatetoProps, { getHeroes, nextIndex, prevIndex })(HeroContainer);
