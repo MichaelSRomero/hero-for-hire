@@ -77,12 +77,11 @@ const filterHeroes = ({heroes, minIndex, maxIndex}) => {
   return filtered;
 }
 
-const mapStatetoProps = (state) => {
-  console.log("We are inside mapStatetoProps()", state);
+const mapStatetoProps = ({ heroState }) => {
 
-  return state.heroes.length > 0 ?
-    {...state, heroes: filterHeroes(state), heroCount: state.heroes.length}
-    : state
+  return heroState.heroes.length > 0 ?
+    {...heroState, heroes: filterHeroes(heroState), heroCount: heroState.heroes.length}
+    : heroState
 }
 
 export default connect(mapStatetoProps, { getHeroes, nextIndex, prevIndex })(HeroContainer);

@@ -275,6 +275,10 @@ body {
   width: 216px;
   min-width: 216px;
 }
+
+.community-summary {
+  height: 61px;
+}
 /*******************************************/
 /* Core Rail */
 .core-rail {
