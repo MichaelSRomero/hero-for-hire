@@ -9,17 +9,17 @@ class LeftRail extends React.Component {
   }
 
   render() {
-    return (
+    const { companies } = this.props
+
+    return ( companies.length > 0 &&
       <div className="left-rail">
-        <CommunityCard />
-        <CommunityCard />
+        <CommunityCard communities={[companies[0], companies[1], companies[2]]}/>
       </div>
     )
   }
 }
 
 const mapStateToProps = ({ companyState }) => {
-  console.log("LEFT RAIL", companyState)
   return companyState;
 }
 
