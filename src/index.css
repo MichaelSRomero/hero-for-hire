@@ -39,6 +39,7 @@ body {
   width: 100%;
   background-color: rgb(35, 54, 65);
   padding: 0 30px;
+  z-index: 2;
 }
 
 .nav-main {
@@ -280,7 +281,10 @@ body {
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #cdcfd2;
   position: relative;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 14px;
   height: 61px;
   padding: 16px 8px 12px 8px;
 }
@@ -291,6 +295,7 @@ body {
   border-radius: 6px;
   height: 28px;
   width: 28px;
+  cursor: pointer;
 }
 
 .community-avatar:nth-child(2) {
@@ -299,6 +304,44 @@ body {
 
 .community-avatar:nth-child(3) {
   left: 28px;
+}
+
+.community-summary > span {
+  margin-left: 60px;
+  cursor: pointer;
+}
+
+.summary-box-2 {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 1px solid #cdcfd2;
+  height: 81px;
+  padding: 12px 4px;
+}
+
+.summary-box-2 > img {
+  height: 40px;
+  width: auto;
+  margin-right: 8px;
+}
+
+.summary-box-text {
+  height: 53px;
+  width: 144px;
+}
+
+.summary-box-text > h3 {
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.summary-box-text > p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
 }
 /*******************************************/
 /* Core Rail */

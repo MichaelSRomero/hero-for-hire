@@ -9,6 +9,7 @@ class CommunityCard extends React.Component {
         <img className="community-avatar" src={communities[0].logo}/>
         <img className="community-avatar" src={communities[1].logo}/>
         <img className="community-avatar" src={communities[2].logo}/>
+        <span>Companies (21)</span>
       </div>
     )
   }
