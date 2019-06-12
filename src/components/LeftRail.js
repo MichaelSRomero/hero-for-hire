@@ -34,6 +34,12 @@ class LeftRail extends React.Component {
             <p>Once you follow hashtags, you will see them here</p>
           </div>
         </div>
+
+        <div className="summary-contact-box">
+          <h3>Your contact import is ready</h3>
+          <h4>Connect with your contacts and never lose touch</h4>
+          <span>More options</span>
+        </div>
       </div>
     )
   }
