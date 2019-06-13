@@ -38,6 +38,11 @@ class LeftRail extends React.Component {
         <div className="summary-contact-box">
           <h3>Your contact import is ready</h3>
           <h4>Connect with your contacts and never lose touch</h4>
+          
+          <div className="cont-btn">
+            <span>Continue</span>
+          </div>
+
           <span>More options</span>
         </div>
       </div>

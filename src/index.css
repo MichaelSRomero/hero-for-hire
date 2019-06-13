@@ -359,6 +359,30 @@ body {
   margin-right: 8px;
 }
 
+.cont-btn {
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 0 1px #0073b1;
+  color: #0073b1;
+  font-weight: 600;
+  justify-content: center;
+  height: 32px;
+  width: 92.45px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.cont-btn:hover {
+  background-color: rgba(152, 216, 244, 0.25);
+  box-shadow: inset 0 0 0 2px #0073b1;
+}
+
+.cont-btn:active {
+  background-color: rgba(152, 216, 244, 0.45);
+  box-shadow: inset 0 0 0 2px #0073b1;
+  outline: #98d8f4 solid 2px;
+}
+
 .summary-contact-box {
   display: flex;
   flex-direction: column;
@@ -384,6 +408,29 @@ body {
   margin: 0 0 4px 0;
   text-align: center;
 }
+
+.summary-contact-box > span {
+  color: rgba(0,0,0,.6);
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 12px;
+  text-align: center;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.summary-contact-box > span:hover {
+  background-color: rgb(234, 236, 238);
+  border-radius: 2px;
+}
+
+.summary-contact-box > span:active {
+  background-color: rgb(226, 228, 229);
+  border-radius: 2px;
+  color: rgba(0,0,0,.9);
+  outline: #98d8f4 solid 2px;
+}
+
 /*******************************************/
 /* Core Rail */
 .core-rail {
