@@ -1,22 +1,25 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getCompanies } from '../adapter/companyAdapter'
+import { getConnections } from '../adapter/connectionAdapter'
 import CommunityCard from './CommunityCard';
+import ConnectionCard from './ConnectionCard';
 import speechBubbleIcon from '../images/speech-bubble.png';
 import hashtagBubbleIcon from '../images/hashtag-bubble.png';
 
 class LeftRail extends React.Component {
   componentDidMount() {
     this.props.getCompanies();
+    this.props.getConnections();
   }
 
   render() {
-    const { companies } = this.props
+    const { companies, connections } = this.props
 
-    return ( companies.length > 0 &&
+    return ( (companies.length > 0 && connections.length > 0) &&
       <div className="left-rail">
+        <ConnectionCard connections={[connections[0], connections[1], connections[2]]}/>
         <CommunityCard communities={[companies[0], companies[1], companies[2]]}/>
-        <CommunityCard communities={[companies[3], companies[4], companies[5]]}/>
 
         <div className="summary-box-2">
           <img src={speechBubbleIcon}/>
@@ -51,8 +54,9 @@ class LeftRail extends React.Component {
   }
 }
 
-const mapStateToProps = ({ companyState }) => {
-  return companyState;
+const mapStateToProps = ({ companyState, connectionState }) => {
+  debugger
+  return {...companyState, ...connectionState};
 }
 
-export default connect(mapStateToProps, { getCompanies })(LeftRail);
+export default connect(mapStateToProps, { getCompanies, getConnections })(LeftRail);

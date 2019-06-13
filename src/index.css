@@ -277,7 +277,7 @@ body {
   min-width: 216px;
 }
 
-.community-summary {
+.connection-summary {
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -289,6 +289,27 @@ body {
   padding: 16px 8px 12px 8px;
 }
 
+.community-summary {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cdcfd2;
+  position: relative;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 14px;
+  height: 57px;
+  padding: 16px 8px 12px 8px;
+}
+
+.connection-avatar {
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+
 .community-avatar {
   position: absolute;
   border: 1px solid white;
@@ -298,15 +319,15 @@ body {
   cursor: pointer;
 }
 
-.community-avatar:nth-child(2) {
+.community-avatar:nth-child(2), .connection-avatar:nth-child(2) {
   left: 14px;
 }
 
-.community-avatar:nth-child(3) {
+.community-avatar:nth-child(3), .connection-avatar:nth-child(3) {
   left: 28px;
 }
 
-.community-summary > span {
+.community-summary > span, .connection-summary > span {
   margin-left: 60px;
   cursor: pointer;
 }
