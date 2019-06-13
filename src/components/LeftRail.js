@@ -16,6 +16,7 @@ class LeftRail extends React.Component {
     return ( companies.length > 0 &&
       <div className="left-rail">
         <CommunityCard communities={[companies[0], companies[1], companies[2]]}/>
+        <CommunityCard communities={[companies[3], companies[4], companies[5]]}/>
 
         <div className="summary-box-2">
           <img src={speechBubbleIcon}/>
@@ -38,7 +39,7 @@ class LeftRail extends React.Component {
         <div className="summary-contact-box">
           <h3>Your contact import is ready</h3>
           <h4>Connect with your contacts and never lose touch</h4>
-          
+
           <div className="cont-btn">
             <span>Continue</span>
           </div>

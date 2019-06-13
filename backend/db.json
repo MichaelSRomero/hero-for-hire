@@ -152,5 +152,22 @@
       "name": "Crunchy Roll",
       "logo": "https://pmcvariety.files.wordpress.com/2016/04/crunchyroll_logo.jpg"
     }
+  ],
+  "connections": [
+    {
+      "id": 1,
+      "name": "Enji Todoroki",
+      "avatar": "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/2/2a/Endeavor_headshot.png/revision/latest/scale-to-width-down/185?cb=20170907233053"
+    },
+    {
+      "id": 2,
+      "name": "Shota Aizawa",
+      "avatar": "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/6/66/Shota_Aizawa_2.png/revision/latest/scale-to-width-down/185?cb=20180728023049"
+    }
+    {
+      "id": 3,
+      "name": "Nemuri Kayama",
+      "avatar": "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/c/c3/Midnight_headshot.png/revision/latest/scale-to-width-down/185?cb=20171015184312"
+    }
   ]
 }

@@ -34,3 +34,9 @@
     margin: 52px auto 0 auto;
   }
 }
+
+@media (min-width: 961px) {
+  .left-rail {
+    /* position: fixed; */
+  }
+}
