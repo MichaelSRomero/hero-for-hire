@@ -24,7 +24,7 @@ body {
   /* width: calc(100vw - 60px); */
   width: 1128px;
   min-width: 1188px;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 /*********************************************/

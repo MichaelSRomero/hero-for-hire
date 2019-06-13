@@ -36,7 +36,10 @@
 }
 
 @media (min-width: 961px) {
-  .left-rail {
-    /* position: fixed; */
+  div.left-rail, div.right-rail {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 64px;
   }
+
 }

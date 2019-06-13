@@ -55,7 +55,6 @@ class LeftRail extends React.Component {
 }
 
 const mapStateToProps = ({ companyState, connectionState }) => {
-  debugger
   return {...companyState, ...connectionState};
 }
 
