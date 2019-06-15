@@ -43,3 +43,31 @@
   }
 
 }
+
+@media (max-width: 360px) {
+  .App-header {
+    background-color: #0084bf;
+  }
+
+  .App-header, .App, .container {
+    width: 100vw;
+  }
+
+  .responsive-search {
+    max-width: 496px;
+    min-width: 100px;
+  }
+
+  .nav-bar {
+    max-width: inherit;
+    min-width: inherit;
+  }
+
+  .nav-item, .nav-main-logo, .nav-item-premium {
+    display: none;
+  }
+
+  .nav-item:nth-child(4) {
+    display: inherit;
+  }
+}

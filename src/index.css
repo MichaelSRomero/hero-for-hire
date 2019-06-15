@@ -807,3 +807,8 @@ body {
   background-color: rgba(226, 244, 252, 0.5);
   border-width: 1.5px;
 }
+
+.hire-btn:active {
+  background-color: rgba(152,216,244,.25);
+  outline: #98d8f4 solid 2px;
+}
