@@ -47,10 +47,43 @@
 @media (max-width: 360px) {
   .App-header {
     background-color: #0084bf;
+    height: 250px;
+    padding: 0px;
+  }
+
+  .container {
+    margin-top: 250px;
   }
 
   .App-header, .App, .container {
-    width: 100vw;
+    width: 100%;
+  }
+
+  .nav-main {
+    display: block;
+    margin: 0px;
+    max-width: none;
+  }
+
+  .nav-bar {
+    height: 50%;
+    width: 100%;
+    /* max-width: inherit;
+    min-width: inherit; */
+  }
+
+  .nav-item {
+    width: 20%;
+  }
+
+  .nav-icon {
+    height: 72px;
+    width: 72px;
+  }
+
+  .nav-icon-img {
+    height: 64px;
+    width: 64px;
   }
 
   .responsive-search {
@@ -58,16 +91,8 @@
     min-width: 100px;
   }
 
-  .nav-bar {
-    max-width: inherit;
-    min-width: inherit;
-  }
-
-  .nav-item, .nav-main-logo, .nav-item-premium {
+  .nav-item:nth-child(6), .nav-item:nth-child(7), .nav-main-logo, .nav-item-premium, .responsive-search {
     display: none;
   }
 
-  .nav-item:nth-child(4) {
-    display: inherit;
-  }
 }
