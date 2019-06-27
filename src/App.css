@@ -72,11 +72,19 @@
     min-width: inherit; */
   }
 
+  .nav-bar-mobile {
+    display: inherit;
+  }
+
+  .nav-bar-mobile > .nav-item {
+    width: 10%;
+  }
+
   .nav-item {
     width: 20%;
   }
 
-  .nav-icon {
+  .nav-icon, .nav-user-icon {
     height: 72px;
     width: 72px;
   }

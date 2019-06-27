@@ -129,6 +129,11 @@ body {
   min-width: 660px;
 }
 
+.nav-bar-mobile {
+  display: none;
+  height: 50%;
+}
+
 .nav-item {
   display: flex;
   flex-direction: column;

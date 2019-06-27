@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchBar from './SearchBar';
 import NavBar from './NavBar';
+import NavBarMobile from './NavBarMobile';
 import hHLogo from '../images/hero-4-hire-logo.png'
 
 class Header extends React.Component {
@@ -14,8 +15,9 @@ class Header extends React.Component {
         <div className="responsive-search">
           <SearchBar />
         </div>
-        
+
         <NavBar />
+        <NavBarMobile />
       </div>
     )
   }
