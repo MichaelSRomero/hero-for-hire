@@ -65,6 +65,10 @@
     width: 100%;
   }
 
+  .connections-mobile {
+    display: inherit;
+  }
+
   .nav-main {
     display: block;
     margin: 0px;
