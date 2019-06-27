@@ -73,11 +73,23 @@
   }
 
   .nav-bar-mobile {
-    display: inherit;
+    display: flex;
+    align-items: center;
   }
 
   .nav-bar-mobile > .nav-item {
-    width: 10%;
+    width: 12.5%;
+  }
+
+
+  .nav-bar-mobile > .nav-search {
+    height: 75px;
+    max-width: 70%;
+  }
+
+  .nav-bar-mobile > .nav-search > input {
+    font-size: 2.5em;
+    height: 70px;
   }
 
   .nav-item {
