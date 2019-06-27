@@ -1,3 +1,6 @@
+/***********************************************/
+/************* DESKTOP VIEWPORT ****************/
+/***********************************************/
 @media (max-width: 1026px) {
   .responsive-search {
     max-width: 496px;
@@ -44,6 +47,9 @@
 
 }
 
+/***********************************************/
+/************* MOBILE VIEWPORT *****************/
+/***********************************************/
 @media (max-width: 360px) {
   .App-header {
     background-color: #0084bf;
@@ -84,7 +90,7 @@
 
   .nav-bar-mobile > .nav-search {
     height: 75px;
-    max-width: 70%;
+    max-width: 75%;
   }
 
   .nav-bar-mobile > .nav-search > input {
