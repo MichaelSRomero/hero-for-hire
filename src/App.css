@@ -92,6 +92,12 @@
     height: 70px;
   }
 
+  .nav-bar-mobile > .nav-search > img {
+    height: 28px;
+    width: auto;
+    margin: 0 16px 0 24px;
+  }
+
   .nav-item {
     width: 20%;
   }
