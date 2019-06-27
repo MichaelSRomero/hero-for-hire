@@ -52,7 +52,7 @@
 /***********************************************/
 @media (max-width: 360px) {
   .App-header {
-    background-color: #0084bf;
+    background-color: rgb(45, 115, 172);
     height: 250px;
     padding: 0px;
   }

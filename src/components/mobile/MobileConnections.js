@@ -5,13 +5,13 @@ class MobileConnections extends React.Component {
     return (
       <div className="connections-mobile">
         <div className="connection-box">
-          <span>250</span> Connections
+          <span className="connection-header">250</span> Connections
         </div>
 
         <div className="connection-box">
-          <span>+</span> Find connections
+          <span className="connection-header">+</span> Find connections
         </div>
-        
+
       </div>
     )
   }
