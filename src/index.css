@@ -259,12 +259,23 @@ body {
   display: flex;
   align-items: center;
   background-color: #fff;
+  border-bottom: rgba(0, 0, 0, 0.3) solid 4px;
   height: 125px;
 }
 
 .mobile-invitations > span {
   font-size: 1.15em;
   margin-left: 48px;
+}
+
+.mobile-invitations-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: rgb(96, 96, 96);
+  font-weight: 500;
+  height: 110px;
 }
 
 /*********************************************/

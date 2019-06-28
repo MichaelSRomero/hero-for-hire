@@ -18,6 +18,10 @@ class MobileConnections extends React.Component {
         <div className="mobile-invitations">
           <span>No pending invitations</span>
         </div>
+
+        <div className="mobile-invitations-btn">
+          <span>Manage all</span>
+        </div>
       </div>
     )
   }
