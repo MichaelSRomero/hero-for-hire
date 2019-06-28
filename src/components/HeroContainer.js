@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import HeroCard from './HeroCard'
 import HeroIndexButton from './HeroIndexButton'
+import HeroCardMobile from './mobile/HeroCardMobile'
 import { getHeroes, nextIndex, prevIndex } from '../adapter/heroAdapter';
 import prevArrow from '../images/prev-arrow.png'
 import prevArrowOn from '../images/prev-arrow-on.png'
@@ -18,7 +19,11 @@ class HeroContainer extends React.Component {
   }
 
   createHeroCards = () => {
-    return this.props.heroes.map(hero => <HeroCard key={hero.id} heroData={hero} handleClick={this.handleClick}/>)
+    return this.props.heroes.map(hero =>
+      window.outerWidth > 499 ?
+        <HeroCard key={hero.id} heroData={hero} handleClick={this.handleClick}/>
+      :
+        <HeroCardMobile key={hero.id} heroData={hero}/>)
   }
 
   nextOnClick = () => {

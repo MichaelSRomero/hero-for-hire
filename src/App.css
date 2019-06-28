@@ -50,7 +50,7 @@
 /***********************************************/
 /************* MOBILE VIEWPORT *****************/
 /***********************************************/
-@media (max-width: 360px) {
+@media (max-width: 499px) {
   .App-header {
     background-color: rgb(45, 115, 172);
     height: 250px;
@@ -136,11 +136,18 @@
 
   .core-rail, .hero-container {
     margin: 0;
+    padding: 0;
+  }
+
+  .hero-list {
+    flex-wrap: wrap;
+    padding: 0;
   }
 
   .nav-item:nth-child(6), .nav-item:nth-child(7),
     .nav-main-logo, .nav-item-premium, .responsive-search,
-    .ad-bar, .left-rail, .right-rail, .core-header {
+    .ad-bar, .left-rail, .right-rail, .core-header,
+    .hero-container-header {
     display: none;
   }
 

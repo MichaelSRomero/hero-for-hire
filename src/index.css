@@ -288,6 +288,20 @@ body {
   height: 130px;
 }
 
+.hero-card-mobile {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.hero-avatar-mobile {
+  height: 104px;
+  width: 104px;
+  border-radius: 50%;
+  background-size: contain;
+  cursor: pointer;
+}
+
 /*********************************************/
 /*________________AD BAR_____________________*/
 /*********************************************/
