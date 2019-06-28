@@ -220,13 +220,19 @@ body {
 /*********************************************/
 /*________________MOBILE_____________________*/
 /*********************************************/
-.connections-mobile {
+.connection-toolbar {
   display: none;
+  flex-direction: column;
   font-size: 2.5em;
-  height: 125px;
+  /* height: 125px; */
   width: 100%;
   margin-bottom: 40px;
+}
+
+.connections-mobile {
+  display: flex;
   box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+  margin-bottom: 40px;
 }
 
 .connection-box {
@@ -247,6 +253,18 @@ body {
   color: rgb(52, 113, 164);
   font-size: 1.25em;
   margin-right: 12px;
+}
+
+.mobile-invitations {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  height: 125px;
+}
+
+.mobile-invitations > span {
+  font-size: 1.15em;
+  margin-left: 48px;
 }
 
 /*********************************************/

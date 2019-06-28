@@ -66,7 +66,7 @@
     width: 100%;
   }
 
-  .connections-mobile {
+  .connection-toolbar {
     display: flex;
   }
 
@@ -92,15 +92,21 @@
     width: 12.5%;
   }
 
-
   .nav-bar-mobile > .nav-search {
+    background-color: rgb(34, 90, 139);
     height: 75px;
     max-width: 75%;
   }
 
   .nav-bar-mobile > .nav-search > input {
+    background-color: rgb(34, 90, 139);
+    color: rgb(103, 159, 197);
     font-size: 2.5em;
     height: 70px;
+  }
+
+  .nav-bar-mobile > .nav-search > input::placeholder {
+    color: rgb(103, 159, 197);
   }
 
   .nav-bar-mobile > .nav-search > img {
