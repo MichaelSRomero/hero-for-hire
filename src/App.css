@@ -62,11 +62,11 @@
     padding: 0;
   }
 
-  .App-header, .App, .container {
+  .App-header, .App, .container, .core-rail {
     width: 100%;
   }
 
-  .connection-toolbar {
+  .connection-toolbar, .core-header-mobile {
     display: flex;
   }
 
@@ -134,9 +134,13 @@
     min-width: 100px;
   }
 
+  .core-rail, .hero-container {
+    margin: 0;
+  }
+
   .nav-item:nth-child(6), .nav-item:nth-child(7),
     .nav-main-logo, .nav-item-premium, .responsive-search,
-    .ad-bar {
+    .ad-bar, .left-rail, .right-rail, .core-header {
     display: none;
   }
 

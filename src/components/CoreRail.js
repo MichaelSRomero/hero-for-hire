@@ -1,5 +1,6 @@
 import React from 'react';
 import HeroContainer from './HeroContainer'
+import MobileCoreHeader from './mobile/MobileCoreHeader'
 
 class CoreRail extends React.Component {
   render() {
@@ -10,6 +11,7 @@ class CoreRail extends React.Component {
           <span id="core-btn">Manage</span>
         </div>
 
+        <MobileCoreHeader />
         <HeroContainer />
       </div>
     )
