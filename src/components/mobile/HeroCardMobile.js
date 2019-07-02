@@ -11,6 +11,11 @@ class HeroCardMobile extends React.Component {
             {backgroundImage: `url(${heroData.avatar})`}
           }>
         </div>
+
+        <div className="hero-info">
+          <p className="hero-name">{heroData.name}</p>
+          <p className="hero-occupation">{heroData.occupation}</p>
+        </div>
       </div>
     )
   }

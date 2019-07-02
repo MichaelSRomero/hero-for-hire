@@ -290,13 +290,15 @@ body {
 
 .hero-card-mobile {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  height: 628px;
   width: 50%;
 }
 
 .hero-avatar-mobile {
-  height: 104px;
-  width: 104px;
+  height: 208px;
+  width: 208px;
   border-radius: 50%;
   background-size: contain;
   cursor: pointer;

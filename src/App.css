@@ -60,6 +60,8 @@
   .container {
     margin-top: 250px;
     padding: 0;
+    overflow: auto;
+    height: 100%;
   }
 
   .App-header, .App, .container, .core-rail {
@@ -139,8 +141,14 @@
     padding: 0;
   }
 
+  .hero-container {
+    height: inherit;
+  }
+
   .hero-list {
+    display: flex;
     flex-wrap: wrap;
+    height: inherit;
     padding: 0;
   }
 
