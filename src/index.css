@@ -19,11 +19,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 52px;
-  padding: 0 30px;
+  margin-top: 3.250em;
+  padding: 0 1.875em;
   /* width: calc(100vw - 60px); */
-  width: 1128px;
-  min-width: 1188px;
+  width: 70.500em;
+  min-width: 74.250em;
   /* overflow: auto; */
 }
 
@@ -35,10 +35,10 @@ body {
   top: 0;
   left: 0;
   box-sizing: border-box;
-  height: 52px;
+  height: 3.250em;
   width: 100%;
   background-color: rgb(35, 54, 65);
-  padding: 0 30px;
+  padding: 0 1.875em;
   z-index: 2;
 }
 

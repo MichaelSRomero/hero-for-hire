@@ -50,7 +50,7 @@
 /***********************************************/
 /************* MOBILE VIEWPORT *****************/
 /***********************************************/
-@media (max-width: 499px) {
+@media screen and (max-device-width: 480px) {
   .App-header {
     background-color: rgb(45, 115, 172);
     height: 250px;

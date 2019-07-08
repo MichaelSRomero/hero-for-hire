@@ -19,11 +19,14 @@ class HeroContainer extends React.Component {
   }
 
   createHeroCards = () => {
+    // return this.props.heroes.map(hero =>
+    //   window.outerWidth > 499 ?
+    //     <HeroCard key={hero.id} heroData={hero} handleClick={this.handleClick}/>
+    //   :
+    //     <HeroCardMobile key={hero.id} heroData={hero}/>)
     return this.props.heroes.map(hero =>
-      window.outerWidth > 499 ?
-        <HeroCard key={hero.id} heroData={hero} handleClick={this.handleClick}/>
-      :
-        <HeroCardMobile key={hero.id} heroData={hero}/>)
+      <HeroCard key={hero.id} heroData={hero} handleClick={this.handleClick}/>
+    )
   }
 
   nextOnClick = () => {
