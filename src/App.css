@@ -149,7 +149,7 @@
   .hero-list {
     display: flex;
     flex-wrap: wrap;
-    height: inherit;
+    /* height: inherit; */
     padding: 0;
   }
 

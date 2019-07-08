@@ -12,9 +12,14 @@ class HeroCardMobile extends React.Component {
           }>
         </div>
 
-        <div className="hero-info">
-          <p className="hero-name">{heroData.name}</p>
-          <p className="hero-occupation">{heroData.occupation}</p>
+        <div className="hero-info-mobile">
+          <p className="hero-name-mobile">{heroData.name}</p>
+          <p className="hero-occupation-mobile">{heroData.occupation}</p>
+
+          <div className="affiliation-mobile">
+            <div className="affiliation-img-mobile"></div>
+            <div className="affiliation-text-mobile"></div>
+          </div>
         </div>
       </div>
     )

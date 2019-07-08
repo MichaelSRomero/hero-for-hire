@@ -226,7 +226,7 @@ body {
   font-size: 14px;
   /* height: 125px; */
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 1em;
 }
 
 .connections-mobile {
@@ -241,7 +241,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  height: 3em;
+  height: 2.75em;
   width: 50%;
 }
 
@@ -264,9 +264,8 @@ body {
 }
 
 .mobile-invitations > span, .core-header-mobile > span {
-  font-size: 1.15em;
   font-weight: 300;
-  margin-left: 48px;
+  margin-left: 1em;
 }
 
 .mobile-invitations-btn {
@@ -276,32 +275,53 @@ body {
   background-color: #fff;
   color: rgb(96, 96, 96);
   font-weight: 500;
-  height: 110px;
+  height: 2.25em;
 }
 
 .core-header-mobile {
   display: none;
   align-items: center;
   background-color: #fff;
-  border-bottom: rgba(0, 0, 0, 0.35) solid 2px;
-  font-size: 2.5em;
-  height: 130px;
+  border-bottom: rgba(0, 0, 0, 0.35) solid 1px;
+  font-size: 14px;
+  height: 2.75em;
 }
 
 .hero-card-mobile {
+  box-sizing: border-box;
+  border-bottom: rgba(0, 0, 0, 0.35) solid 1px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 628px;
+  align-items: center;
+  height: 13em;
   width: 50%;
+  padding: 1em;
 }
 
 .hero-avatar-mobile {
-  height: 208px;
-  width: 208px;
+  height: 4em;
+  width: 4em;
   border-radius: 50%;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
+}
+
+.hero-info-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 1em;
+}
+
+.hero-name-mobile {
+  font-weight: 500;
+  margin-bottom: .25em;
+}
+
+.hero-occupation-mobile {
+  color: rgb(116, 116, 116);
 }
 
 /*********************************************/
