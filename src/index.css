@@ -89,18 +89,18 @@ body {
   display: flex;
   align-items: center;
   background-color: #e1e9ee;
-  border-radius: 2px;
-  height: 34px;
-  width: 280px;
-  min-width: 280px;
-  padding-right: 8px;
+  border-radius: .125em;
+  height: 2.125em;
+  width: 17.500em;
+  min-width: 17.500em;
+  padding-right: .5em;
 }
 
 .nav-search > img {
-  height: 12px;
-  width: 12px;
-  margin-left: 10px;
-  margin-right: 6px;
+  height: .75em;
+  width: .75em;
+  margin-left: .625em;
+  margin-right: .375em;
 }
 
 .search {
@@ -108,7 +108,7 @@ body {
   background-color: #e1e9ee;
   border: none;
   font-weight: 400;
-  font-size: 14px;
+  font-size: .875em;
   line-height: 1.75;
   width: 100%;
 }
@@ -125,8 +125,8 @@ body {
   font-weight: 400;
   line-height: 1.4;
   height: 100%;
-  width: 660px;
-  min-width: 660px;
+  width: 41.250em;
+  min-width: 41.250em;
 }
 
 .nav-bar-mobile {
@@ -138,10 +138,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 12px;
-  height: calc(100% - 8px);
-  width: 80px;
-  margin-top: 8px;
+  font-size: .75em;
+  height: calc(100% - 0.667em);
+  width: 6.667em;
+  margin-top: 0.667em;
   cursor: pointer;
   transition: 0.167s;
 }
@@ -149,8 +149,8 @@ body {
 .nav-item:nth-child(7) {
   border-left: #5c6f7c solid 1px;
   margin-top: 0px;
-  padding-top: 8px;
-  width: 79px;
+  padding-top: 0.667em;
+  width: 6.583em;
 }
 
 .nav-item:hover {
@@ -161,16 +161,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 24px;
-  width: 24px;
+  height: 2em;
+  width: 2em;
 }
 
 .nav-icon-img {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  height: 20px;
-  width: 20px;
+  height: 1.667em;
+  width: 1.667em;
   transition: 0.167s;
 }
 
@@ -183,8 +183,8 @@ body {
   background-size: cover;
   border-radius: 50%;
   border: 1px solid white;
-  height: 22px;
-  width: 22px;
+  height: 1.833em;
+  width: 1.833em;
   transition: 0.167s;
 }
 
@@ -194,9 +194,9 @@ body {
 }
 
 .nav-text > img {
-  height: 4px;
-  width: 8px;
-  margin-left: 6px;
+  height: 0.333em;
+  width: 0.667em;
+  margin-left: .5em;
   transition: 1s;
 }
 
@@ -206,9 +206,9 @@ body {
   color: #dccea4;
   font-weight: 400;
   font-size: 12px;
-  margin: 4px 0;
-  height: calc(100% - 8px);
-  width: 100px;
+  margin: 0.333em 0;
+  height: calc(100% - 0.667em);
+  width: 8.333em;
   text-align: center;
   cursor: pointer;
 }
@@ -314,8 +314,8 @@ body {
   align-items: baseline;
   font-size: 15px;
   width: 100%;
-  height: 17px;
-  padding: 16px 0;
+  height: 1.133em;
+  padding: 1.067em 0;
 }
 
 #link-text {
@@ -330,22 +330,22 @@ body {
   color: #0084bf;
   font-family: helvetica, arial, sans-serif;
   font-weight: 600;
-  line-height: 16px;
+  line-height: 1.067em;
 }
 
 #description-link {
   color: #434649;
   font-family: helvetica, arial, sans-serif;
   font-weight: 600;
-  line-height: 16px;
+  line-height: 1.067em;
 }
 
 #ad-text {
   font-size: 13px;
   color: rgba(0,0,0,0.55);
-  line-height: 16px;
-  margin-left: 2px;
-  min-width: 24px;
+  line-height: 1.231em;
+  margin-left: 0.154em;
+  min-width: 1.846em;
   text-align: right;
 }
 
