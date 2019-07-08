@@ -153,6 +153,13 @@
     padding: 0;
   }
 
+  .hire-btn {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 21px;
+    padding: 0.15em 1.75em;
+  }
+
   .nav-item:nth-child(6), .nav-item:nth-child(7),
     .nav-main-logo, .nav-item-premium, .responsive-search,
     .ad-bar, .left-rail, .right-rail, .core-header,
