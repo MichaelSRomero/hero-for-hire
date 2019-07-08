@@ -47,7 +47,7 @@ body {
   align-items: center;
   height: inherit;
   /* setting a max to viewport */
-  max-width: 1128px;
+  max-width: 70.5em;
   margin: 0 auto;
 }
 
@@ -55,17 +55,17 @@ body {
 .nav-main-logo {
   display: flex;
   align-items: center;
-  height: 46px;
-  width: 46px;
+  height: 2.875em;
+  width: 2.875em;
   /* logo can not go below 46px */
-  min-width: 46px;
+  min-width: 2.875em;
 }
 
 .nav-main-logo > img {
   cursor: pointer;
-  height: 34px;
-  width: 34px;
-  border-radius: 2px;
+  height: 2.125em;
+  width: 2.125em;
+  border-radius: .125em;
   transition: 0.167s;
 }
 
@@ -80,8 +80,8 @@ body {
    * 406px (maximum)
    */
   width: 100%;
-  max-width: 406px;
-  margin-right: 16px;
+  max-width: 25.375em;
+  margin-right: 1em;
 }
 
 .nav-search {
