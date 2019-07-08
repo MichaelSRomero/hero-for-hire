@@ -50,7 +50,7 @@
 /***********************************************/
 /************* MOBILE VIEWPORT *****************/
 /***********************************************/
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .App-header {
     background-color: rgb(45, 115, 172);
     height: 5.625em;
@@ -62,6 +62,7 @@
     padding: 0;
     overflow: auto;
     height: 100%;
+    min-width: 0;
   }
 
   .App-header, .App, .container, .core-rail {
@@ -81,6 +82,7 @@
   .nav-bar {
     height: 50%;
     width: 100%;
+    min-width: 100%;
     /* max-width: inherit;
     min-width: inherit; */
   }
@@ -103,7 +105,6 @@
   .nav-bar-mobile > .nav-search > input {
     background-color: rgb(34, 90, 139);
     color: rgb(103, 159, 197);
-    /* font-size: 2.5em; */
     height: 1.375em;
   }
 
@@ -132,8 +133,8 @@
   }
 
   .responsive-search {
-    max-width: 496px;
-    min-width: 100px;
+    max-width: 31em;
+    min-width: 6.25em;
   }
 
   .core-rail, .hero-container {

@@ -223,7 +223,7 @@ body {
 .connection-toolbar {
   display: none;
   flex-direction: column;
-  font-size: 2.5em;
+  font-size: 14px;
   /* height: 125px; */
   width: 100%;
   margin-bottom: 40px;
@@ -231,8 +231,8 @@ body {
 
 .connections-mobile {
   display: flex;
-  box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
-  margin-bottom: 40px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 1px 1px rgba(0,0,0,.2);
+  margin-bottom: 1em;
 }
 
 .connection-box {
@@ -241,26 +241,26 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  height: 125px;
+  height: 3em;
   width: 50%;
 }
 
 .connection-box:nth-child(1) {
-  border-right: rgba(0,0,0,.35) solid 2px;
+  border-right: rgba(0,0,0,.35) solid 1px;
 }
 
 .connection-header {
   color: rgb(52, 113, 164);
   font-size: 1.25em;
-  margin-right: 12px;
+  margin-right: .25em;
 }
 
 .mobile-invitations {
   display: flex;
   align-items: center;
   background-color: #fff;
-  border-bottom: rgba(0, 0, 0, 0.3) solid 4px;
-  height: 125px;
+  border-bottom: rgba(0, 0, 0, 0.3) solid 2px;
+  height: 3em;
 }
 
 .mobile-invitations > span, .core-header-mobile > span {
