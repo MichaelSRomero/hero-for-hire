@@ -420,7 +420,7 @@ body {
 }
 
 .community-summary > span, .connection-summary > span {
-  margin-left: 60px;
+  margin-left: 4.286em;
   cursor: pointer;
 }
 
