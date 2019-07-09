@@ -6,8 +6,8 @@ const UserIcon = (props) => {
   return (
     <div
       className="nav-item"
-      onMouseEnter={() => props.onHoverChange("user")}
-      onMouseLeave={() => props.onHoverChange('')}>
+      onMouseEnter={window.screen.width > 481 ? () => props.onHoverChange("user") : null}
+      onMouseLeave={window.screen.width > 481 ? () => props.onHoverChange('') : null}>
       <div className="nav-icon">
         <div className="nav-user-icon">
         </div>
