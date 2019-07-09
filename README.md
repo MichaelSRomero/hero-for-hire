@@ -45,9 +45,9 @@ npm start
 
 ## Demo
 <h1 align="center">
-  <a href="http://www.youtube.com/watch?v=IbObEOuefto" target="_blank"><img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-web.png" alt="hero 4 hire" width="400"></a>
+  <a href="http://www.youtube.com/watch?v=IbObEOuefto" target="_blank"><img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-web.png" alt="hero 4 hire" width="200"></a>
 
-  <img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-landscape.jpg" alt="hero 4 hire" width="150" style="display: inline-block;">
+  <img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-landscape.jpg" alt="hero 4 hire" width="200" style="display: inline-block;">
 
   <img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-portrait.jpg" alt="hero 4 hire" width="150" style="display: inline-block;">
   <br>
