@@ -1,5 +1,9 @@
 # HERO FOR HIRE
 
+<h1 align="center">
+  <a href="https://michaelsromero.github.io/hero-for-hire/" target="_blank">LIVE DEMO</a>
+</h1>
+
 ### Project Aim
 1. Learn to build responsive websites on Mobile & Desktops
 2. Practice building website using references
@@ -45,7 +49,7 @@ npm start
 
 ## Demo
 <h1 align="center">
-  <a href="http://www.youtube.com/watch?v=IbObEOuefto" target="_blank"><img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-web.png" alt="hero 4 hire" width="300"></a>
+  <a href="https://michaelsromero.github.io/hero-for-hire/" target="_blank"><img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-web.png" alt="hero 4 hire" width="300"></a>
 
   <img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-landscape.jpg" alt="mobile landscape" width="350" style="display: inline-block;">
 
