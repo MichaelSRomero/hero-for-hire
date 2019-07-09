@@ -45,9 +45,9 @@ npm start
 
 ## Demo
 <h1 align="center">
-  <a href="http://www.youtube.com/watch?v=IbObEOuefto" target="_blank"><img src="https://github.com/MichaelSRomero/Waifu-front-end/blob/master/src/images/om-screenshot.png" alt="Otaku Meets" width="400"></a>
+  <a href="http://www.youtube.com/watch?v=IbObEOuefto" target="_blank"><img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-web.png" alt="hero 4 hire" width="400"></a>
 
-  <img src="https://media.giphy.com/media/69BZCyph1rYvN5PADn/giphy.gif" alt="Otaku Meets" width="400" style="display: inline-block;">
+  <img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-portrait.jpg" alt="hero 4 hire" width="400" style="display: inline-block;">
   <br>
 </h1>
 
