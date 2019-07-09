@@ -21,10 +21,8 @@ body {
   align-items: center;
   margin-top: 3.250em;
   padding: 0 1.875em;
-  /* width: calc(100vw - 60px); */
   width: 70.500em;
   min-width: 74.250em;
-  /* overflow: auto; */
 }
 
 /*********************************************/
@@ -119,7 +117,6 @@ body {
 /*******************************************/
 /* NAV BAR */
 .nav-bar {
-  /* background-color: red; */
   display: flex;
   color: #c7d1d8;
   font-weight: 400;
@@ -224,7 +221,6 @@ body {
   display: none;
   flex-direction: column;
   font-size: 14px;
-  /* height: 125px; */
   width: 100%;
   margin-bottom: 1em;
 }
@@ -613,7 +609,6 @@ body {
   color: rgba(0,0,0,.6);
   font-weight: 600;
   font-size: 14px;
-  /* height: 24px; */
   padding: 4px 8px;
   cursor: pointer;
 }

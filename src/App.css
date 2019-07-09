@@ -83,8 +83,6 @@
     height: 50%;
     width: 100%;
     min-width: 100%;
-    /* max-width: inherit;
-    min-width: inherit; */
   }
 
   .nav-bar-mobile {
@@ -113,7 +111,6 @@
   }
 
   .nav-bar-mobile > .nav-search > img {
-    /* height: 28px; */
     width: auto;
     margin: 0 .25em 0 .5em;
   }
@@ -149,7 +146,6 @@
   .hero-list {
     display: flex;
     flex-wrap: wrap;
-    /* height: inherit; */
     padding: 0;
   }
 
