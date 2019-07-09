@@ -14,19 +14,20 @@ const pointerStyle = {cursor: 'pointer'}
 
 class HeroContainer extends React.Component {
 
+  state = {
+    orientation: ""
+  }
+
   handleClick = (heroData) => {
     console.log('Got clicked');
   }
 
   createHeroCards = () => {
     return this.props.heroes.map(hero =>
-      window.screen.width > 481 && window.screen.orientation.type !== "portrait-primary" ?
+      window.screen.width > 481 && this.state.orientation !== "portrait-primary" ?
         <HeroCard key={hero.id} heroData={hero} handleClick={this.handleClick}/>
       :
         <HeroCardMobile key={hero.id} heroData={hero}/>)
-    // return this.props.heroes.map(hero =>
-    //   <HeroCard key={hero.id} heroData={hero} handleClick={this.handleClick}/>
-    // )
   }
 
   nextOnClick = () => {
@@ -43,6 +44,10 @@ class HeroContainer extends React.Component {
 
   componentDidMount() {
     this.props.getHeroes()
+    // Checks for orientation changes between landscape and portrait
+    window.addEventListener("orientationchange", () => {
+      this.setState({orientation: window.screen.orientation.type})
+    })
   }
 
   render() {
