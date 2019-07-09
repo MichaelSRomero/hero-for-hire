@@ -4,7 +4,7 @@ const fetchHeroes = (heroes) => ({type: 'FETCH_HEROES', payload: heroes})
 
 export const getHeroes = () => {
   return (dispatch) => {
-    return fetch("http://localhost:3000/heroes")
+    return fetch("https://hero4hire.herokuapp.com/heroes")
     // return fetch("http://004c4d7c.ngrok.io/heroes")
       .then(res => res.json())
       .then(heroesJSON => dispatch(fetchHeroes(heroesJSON)) )
