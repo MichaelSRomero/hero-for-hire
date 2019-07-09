@@ -47,7 +47,7 @@ npm start
 <h1 align="center">
   <a href="http://www.youtube.com/watch?v=IbObEOuefto" target="_blank"><img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-web.png" alt="hero 4 hire" width="400"></a>
 
-  <img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-portrait.jpg" alt="hero 4 hire" width="100" style="display: inline-block;">
+  <img src="https://github.com/MichaelSRomero/hero-for-hire/blob/master/src/images/hero4hire-portrait.jpg" alt="hero 4 hire" width="150" style="display: inline-block;">
   <br>
 </h1>
 
